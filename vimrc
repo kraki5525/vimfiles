@@ -18,10 +18,15 @@ set history=50			"keep 50 lines of command line history
 
 set showcmd			"show incomplete commands
 
-nmap <leader>s source $MYVIMRC	"reload the vimrc file
+"reload the vimrc file, vimrc is a variable defined in parent vimrc
+nmap <leader>l :source $MYVIMRC<CR>
+
+"open the vimrc file, vimrc is a variable defined in the parent vimrc
+nmap <leader>e :e $VIMRC<CR>
 
 """"""""""""""""""""""""""""
 " File Type Settings
 """"""""""""""""""""""""""""
+syntax on
 filetype plugin indent on
 
