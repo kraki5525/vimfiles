@@ -7,20 +7,21 @@ call pathogen#infect()
 """"""""""""""""""""""""""""""
 " General Options
 """"""""""""""""""""""""""""""
-set incsearch			"do incremental searching
-set hlsearch			"hightlight search matches
+set incsearch				"do incremental searching
 
-set backspace=indent,eol,start	"allow backspacing over everything in insert mode
+set hlsearch				"hightlight search matches
 
-set ruler			"show cursor position at all times
+set backspace=indent,eol,start		"allow backspacing over everything in insert mode
 
-set history=50			"keep 50 lines of command line history
+set ruler				"show cursor position at all times
 
-set showcmd			"show incomplete commands
+set history=50				"keep 50 lines of command line history
 
-set autoread			"reload file when changes have been made outside VIM, but not in VIM
+set showcmd				"show incomplete commands
 
-set hidden			"allow switching of buffers when unsaved changes exist
+set autoread				"reload file when changes have been made outside VIM, but not in VIM
+
+set hidden				"allow switching of buffers when unsaved changes exist
 
 """"""""""""""""""""""""""""
 " Normal Mode Remaps
@@ -41,8 +42,10 @@ nmap <leader>e :e $VIMRC<CR>
 """"""""""""""""""""""""""""
 " AutoCommands
 """"""""""""""""""""""""""""
-if has("autocmd")		"check for autocommand option
-	autocmd BufEnter * cd %:p:h
+if has("autocmd")			"check for autocommand option
+
+	autocmd BufEnter * cd %:p:h	"change current directory to directory of the current file
+
 endif
 
 """"""""""""""""""""""""""""
