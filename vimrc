@@ -23,6 +23,13 @@ set autoread				"reload file when changes have been made outside VIM, but not in
 
 set hidden				"allow switching of buffers when unsaved changes exist
 
+set background=dark
+
+let g:solarized_termcolors=256
+
+colorscheme solarized
+
+set guifont=Consolas
 """"""""""""""""""""""""""""
 " Normal Mode Remaps
 """"""""""""""""""""""""""""
@@ -52,5 +59,6 @@ endif
 " File Type Settings
 """"""""""""""""""""""""""""
 syntax on
+filetype plugin on
 filetype plugin indent on
 
