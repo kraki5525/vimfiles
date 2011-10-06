@@ -46,6 +46,10 @@ nmap <leader>l :source $MYVIMRC<CR>
 "open the vimrc file, vimrc is a variable defined in the parent vimrc
 nmap <leader>e :e $VIMRC<CR>
 
+nmap j gj
+
+nmap k gk
+
 """"""""""""""""""""""""""""
 " AutoCommands
 """"""""""""""""""""""""""""
