@@ -30,6 +30,12 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 set guifont=Consolas
+
+""""""""""""""""""""""""""""
+" Buffer Settings
+""""""""""""""""""""""""""""
+set hidden				"Allows switching of buffers, even if they have been unsaved edits
+
 """"""""""""""""""""""""""""
 " Normal Mode Remaps
 """"""""""""""""""""""""""""
