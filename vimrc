@@ -57,6 +57,18 @@ nmap j gj
 nmap k gk
 
 """"""""""""""""""""""""""""
+" Insert Mode Remaps
+""""""""""""""""""""""""""""
+
+imap jk <ESC>
+
+""""""""""""""""""""""""""""
+" Visual Mode Remaps
+""""""""""""""""""""""""""""
+
+vmap jk <ESC>
+
+""""""""""""""""""""""""""""
 " AutoCommands
 """"""""""""""""""""""""""""
 if has("autocmd")			"check for autocommand option
