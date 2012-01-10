@@ -65,7 +65,6 @@ imap jk <ESC>
 """"""""""""""""""""""""""""
 " Visual Mode Remaps
 """"""""""""""""""""""""""""
-
 vmap jk <ESC>
 
 """"""""""""""""""""""""""""
@@ -83,4 +82,3 @@ endif
 syntax on
 filetype plugin on
 filetype plugin indent on
-
