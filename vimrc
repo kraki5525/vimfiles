@@ -41,31 +41,35 @@ set hidden				"Allows switching of buffers, even if they have been unsaved edits
 """"""""""""""""""""""""""""
 
 "Tab to next buffer
-nmap <Tab> :bnext<CR>
+nnoremap <Tab> :bnext<CR>
 
 "Shift-Tab to previous buffer
-nmap <S-Tab> :bprev<CR>
+nnoremap <S-Tab> :bprev<CR>
 
 "reload the vimrc file, vimrc is a variable defined in parent vimrc
-nmap <leader>l :source $MYVIMRC<CR>
+nnoremap <leader>l :source $MYVIMRC<CR>
 
 "open the vimrc file, vimrc is a variable defined in the parent vimrc
-nmap <leader>e :e $VIMRC<CR>
+nnoremap <leader>e :e $VIMRC<CR>
 
-nmap j gj
+nnoremap j gj
 
-nmap k gk
+nnoremap k gk
 
 """"""""""""""""""""""""""""
 " Insert Mode Remaps
 """"""""""""""""""""""""""""
 
-imap jk <ESC>
+inoremap jk <ESC>
+
+inoremap        (  ()<Left>
+inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+inoremap <expr> "  strpart(getline('.'), col('.') - 1, 1) == '"' ? "\<Right>" : "\"\"\<Left>"
 
 """"""""""""""""""""""""""""
 " Visual Mode Remaps
 """"""""""""""""""""""""""""
-vmap jk <ESC>
+vnoremap jk <ESC>
 
 """"""""""""""""""""""""""""
 " AutoCommands
@@ -82,3 +86,21 @@ endif
 syntax on
 filetype plugin on
 filetype plugin indent on
+
+""""""""""""""""""""""""""""
+" Functions
+""""""""""""""""""""""""""""
+
+func! VerifyNextChar()
+	let n = col('.')
+	let l = getline('.')
+
+	let c = l[n -1]
+
+	if (strlen(l) >= n && l[n -1] == ')') 
+		return 1
+	else
+		return 0
+	endif
+endfunc
+
