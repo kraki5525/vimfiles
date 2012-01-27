@@ -56,6 +56,8 @@ nnoremap j gj
 
 nnoremap k gk
 
+nnoremap <silent> <ESC> :noh<CR>
+
 """"""""""""""""""""""""""""
 " Insert Mode Remaps
 """"""""""""""""""""""""""""
