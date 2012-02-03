@@ -56,6 +56,7 @@ nmap j gj
 
 nmap k gk
 
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 """"""""""""""""""""""""""""
 " Insert Mode Remaps
 """"""""""""""""""""""""""""
