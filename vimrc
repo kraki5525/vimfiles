@@ -31,6 +31,8 @@ colorscheme solarized
 
 set guifont=Consolas
 
+set shortmess+=I
+
 """"""""""""""""""""""""""""
 " Buffer Settings
 """"""""""""""""""""""""""""
