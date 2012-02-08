@@ -23,13 +23,19 @@ set autoread				"reload file when changes have been made outside VIM, but not in
 
 set hidden				"allow switching of buffers when unsaved changes exist
 
+set number
+
 set background=dark
 
 let g:solarized_termcolors=256
 
 colorscheme solarized
 
-set guifont=Consolas
+set guifont=DejaVu_Sans_Mono:h10:cANSI
+
+set laststatus=2
+
+set encoding=utf-8
 
 """"""""""""""""""""""""""""
 " Buffer Settings
@@ -89,20 +95,5 @@ syntax on
 filetype plugin on
 filetype plugin indent on
 
-""""""""""""""""""""""""""""
-" Functions
-""""""""""""""""""""""""""""
 
-func! VerifyNextChar()
-	let n = col('.')
-	let l = getline('.')
-
-	let c = l[n -1]
-
-	if (strlen(l) >= n && l[n -1] == ')') 
-		return 1
-	else
-		return 0
-	endif
-endfunc
-
+let g:Powerline_symbols='unicode'
