@@ -37,6 +37,8 @@ set laststatus=2
 
 set encoding=utf-8
 
+set shortmess+=I
+
 """"""""""""""""""""""""""""
 " Buffer Settings
 """"""""""""""""""""""""""""
@@ -64,6 +66,7 @@ nnoremap k gk
 
 nnoremap <silent> <ESC> :noh<CR>
 
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 """"""""""""""""""""""""""""
 " Insert Mode Remaps
 """"""""""""""""""""""""""""
