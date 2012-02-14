@@ -21,8 +21,6 @@ set showcmd				"show incomplete commands
 
 set autoread				"reload file when changes have been made outside VIM, but not in VIM
 
-set hidden				"allow switching of buffers when unsaved changes exist
-
 set background=dark
 
 let g:solarized_termcolors=256
@@ -32,6 +30,8 @@ colorscheme solarized
 set guifont=Consolas
 
 set shortmess+=I
+
+set number
 
 """"""""""""""""""""""""""""
 " Buffer Settings
