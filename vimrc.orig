@@ -37,11 +37,13 @@ set encoding=utf-8
 
 set shortmess+=I
 
-set number
-
+<<<<<<< HEAD
 set wildmenu
 
 set wildmode=longest,list
+=======
+set number
+>>>>>>> 461862d3be4753ef5dbac83551019aaf10011a28
 
 """"""""""""""""""""""""""""
 " Buffer Settings
