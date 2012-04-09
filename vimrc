@@ -29,7 +29,7 @@ set background=dark
 
 let g:solarized_termcolors=256
 
-colorscheme solarized
+colorscheme Tomorrow-Night-Bright
 
 set guifont=DejaVu_Sans_Mono:h10:cANSI
 
@@ -39,12 +39,22 @@ set encoding=utf-8
 
 set shortmess+=I
 
+set wildmenu
+
+set wildmode=longest,list
+
 """"""""""""""""""""""""""""
 " Buffer Settings
 """"""""""""""""""""""""""""
 set hidden				"Allows switching of buffers, even if they have been unsaved edits
 
-""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
+" Generic Maps
+"""""""""""""""""""""""""""
+
+map Y y$
+
+"""""""""""""""""""""""""""
 " Normal Mode Remaps
 """"""""""""""""""""""""""""
 
@@ -81,6 +91,9 @@ inoremap <expr> "  strpart(getline('.'), col('.') - 1, 1) == '"' ? "\<Right>" : 
 " Visual Mode Remaps
 """"""""""""""""""""""""""""
 vnoremap jk <ESC>
+
+vnoremap > >gv
+vnoremap < <gv
 
 """"""""""""""""""""""""""""
 " AutoCommands
