@@ -43,6 +43,14 @@ set wildmenu
 
 set wildmode=longest,list
 
+set expandtab
+
+set tabstop=4
+
+set shiftwidth=4
+
+set nowrap
+
 """"""""""""""""""""""""""""
 " Buffer Settings
 """"""""""""""""""""""""""""
@@ -77,6 +85,8 @@ nnoremap k gk
 nnoremap <silent> <ESC> :noh<CR>
 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+nnoremap :W :w
 """"""""""""""""""""""""""""
 " Insert Mode Remaps
 """"""""""""""""""""""""""""
